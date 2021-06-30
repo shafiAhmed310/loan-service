@@ -1,0 +1,463 @@
+@import url('../CSS/fonts.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+body{
+   
+    background:white;
+}
+
+a{
+    text-decoration: none;
+}
+h5{
+    font-family: var(--Oswald)
+    ;
+}
+:root{
+    --Roboto:'Roboto' , 'cursive';
+    --Ubuntu:'Ubuntu' , 'cursive';
+    --Oswald:'Oswald' , 'cursive';
+}
+.nav-wrapper{
+    background: #448aff !important;
+}
+
+.menu{
+    font-size:3rem !important;
+}
+.logo{
+    width: 100px;
+    height: 50px;
+    margin-left: 3em;
+}
+
+.right{
+    margin-right: 6em !important;
+}
+
+.brand-logo{
+    margin-left: 0.1em ;
+    font-family: var(--Oswald) !important;
+    color:#fff !important;
+    font-size: 1.8rem;
+}
+nav{
+    position: fixed !important;
+    top: 0;
+    z-index: 1;
+}
+.nav-wrapper .right li a{
+    text-transform: uppercase !important;
+    font-size: 1.2rem !important;
+    font-family: var(--Roboto) !important;
+    
+}
+
+/* info block*/
+
+.infoBlock{
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background:  linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) , url('../images/christine.jpg') ;
+    background-repeat:no-repeat ;
+   background-size: cover;
+    background-position:center;
+    height: 100%;
+  
+}
+.infoBlock .introBlock{
+    position: relative;
+    margin: 6em 0em 1em 3em;
+    padding: 3em;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    font-family: var(--Ubuntu);
+    border-radius: 1em;
+}
+.infoBlock .introBlock p{
+    padding: 1rem 0em 2rem 0em;
+}
+.infoBlock .imgBlock .bg-image{
+    width: 100%;
+   
+}
+.whatsapp{
+    position: absolute;
+    top: 20em;
+    left: 8em;
+    display: inline;
+    padding: 0.8em 2em;
+    background: #448aff ;
+    border-radius: 1em;
+    font-family: var(--Oswald);
+    font-size: 1.5rem;
+    
+}
+.formBlock{
+    margin: 6em 0em 1em 6em;
+  padding: 1em 0em 0em 6em;
+    align-items: center !important;
+    background: white;
+    width: 70%;
+    height: 83%;
+    border-radius: 1em;
+}
+.apply{
+    margin-left: 2em;
+    font-family: var(--Oswald);
+    font-size: 1.3em;
+     display: inline;
+    background: #448aff;
+    padding: 0.2em 1em;
+    border-radius: 0.3em;
+   
+}
+.input-field label {
+    color: #000;
+  }
+  .input-field input[type=text]:focus + label {
+    color: #448aff;
+  }
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #448aff !important;
+    box-shadow: 0 1px 0 0 #448aff !important;
+  }
+  .input-field input[type=email]:focus {
+    border-bottom: 1px solid #448aff !important;
+    box-shadow: 0 1px 0 0 #448aff !important;
+  }
+  .input-field input[type=tel]:focus {
+    border-bottom: 1px solid #448aff !important;
+    box-shadow: 0 1px 0 0 #448aff !important;
+  }
+  .input-field .prefix.active {
+    color: #448aff !important;
+  }
+  .btn{
+     margin-left: 6em;
+     background: #448aff !important;
+  }
+
+/*cards */
+.cardsBlock{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 1em;
+    margin: 2em 3em;
+}
+.cardsBlock div{
+   
+    margin: 1em;
+    box-shadow: 2px 5px 3px 1px #ccc;
+    border-radius: 0.5em;
+    height: 80%;
+}
+.cardsBlock div:hover{
+    box-shadow: 3px 6px 6px 3px #448aff;
+}
+.cardsBlock img{
+    width: 100%;
+    height: 50%;
+   
+}
+.cardsBlock h6{
+    font-family: var(--Oswald);
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1em 0em 1em 8em;
+}
+.cardsBlock p{
+    padding: 0.5em 1em 1em 1em;
+    text-align: justify;
+}
+.cardsBlock .btn{
+    margin-left: 7em;
+  padding: 0em 3em 0em 3em;
+}
+/*carousel*/
+.mySlides {display:none;}
+
+/*AboutUs*/
+
+.aboutus{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: whitesmoke;
+}
+.aboutus .aboutBlock{
+    padding: 4em;
+}
+.aboutus .aboutBlock h3{
+    font-family: var(--Oswald);
+    font-size: 2rem;
+}
+.aboutus .aboutBlock p{
+    padding: 1em;
+    font-family: var(--Ubuntu);
+    font-size: 1rem;
+    line-height: 1.8em;
+   text-align: justify;
+}
+.aboutus .aboutBlock>div{
+    font-weight: bold;
+    font-family: var(--Ubuntu);
+    font-size: 1.2rem;
+}
+.aboutus .carouselBlock{
+    padding: 4em;
+}
+.carouselBlock img{
+    border: 1em solid #448aff;
+}
+/*emi caculator*/
+.emiCalculator{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.emiCalculator .calculatorBlock{
+    padding: 3em;
+}
+.level-right{
+    margin-right: 3em;
+}
+.field input[type=number]:focus{
+    border-bottom: 1px solid #448aff !important;
+}
+.emiCalculator .resultsBlock{
+    padding: 3em;
+}
+.emiCalculator .resultsBlock h1{
+    font-family: var(--Oswald) !important;
+    font-size: 2rem !important;
+}
+ .content h1{
+    font-family: var(--Oswald) !important;
+    font-size: 2rem !important;
+}
+.emiCalculator .resultsBlock .columns{
+    display: block !important;
+   
+}
+.emiCalculator .resultsBlock .columns>div{
+    margin: 1em 6em 0em 0em !important;
+}
+.control .is-primary{
+    color: black !important;
+    font-family: var(--Ubuntu);
+    margin-left: 8em;
+}
+.control .is-primary:hover{
+    background: #448aff !important;
+    color: white !important;
+}
+.control .is-outlined{
+    border: 1px solid #448aff !important;
+}
+.level .level-left{
+    font-family: var(--Ubuntu) !important;
+}
+/*testmonial*/
+.demo{ background:whitesmoke; }
+.testimonial{
+    padding: 35px 50px;
+    margin: 0 20px 30px;
+    border-radius: 0 70px 0 70px;
+    border: 5px solid #ffc33c;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    background:  #448aff;
+}
+.testimonial .pic{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+}
+.testimonial .title{
+    display: block;
+    margin: 0 0 7px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffc33c;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.testimonial .post{
+    display: block;
+    font-size: 15px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.testimonial .description{
+    font-size: 16px;
+    color: #fff;
+    line-height: 30px;
+}
+.owl-theme .owl-controls{ margin-top: 0; }
+.owl-theme .owl-controls .owl-page span{
+    background:  #3d3d3d;
+    opacity: 0.8;
+    transition: all 0.3s ease 0s;
+}
+.owl-theme .owl-controls .owl-page.active span{ background: #ffc33c; }
+.demo h1{
+    font-family: var(--Oswald);
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2em;
+}
+
+.demo p{
+    text-align: center;
+    font-family: var(--Ubuntu);
+    font-size: 1rem;
+    padding: 1em;
+   
+}
+/*footerBlock*/
+.footerBlock{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #3d3d3d;
+    color: white;
+}
+.reachus h1{
+    text-align: center;
+    font-family: var(--Oswald);
+    font-size: 2em;
+    padding: 2em;
+}
+.reachus h5{
+   
+    font-family: var(--Oswald);
+    font-size: 1.5em;
+    padding-left: 1em;
+}
+.reachus .address{
+    font-family: var(--Ubuntu);
+    padding: 0.8em;
+    text-align: center;
+    
+}
+.reachus .whatsDiv{
+    font-family: var(--Ubuntu);
+    padding-left: 2em;
+    
+    
+}
+.reachus .emaildiv{
+    font-family: var(--Ubuntu);
+    padding-left: 2em;
+    
+    
+}
+.reachus .contactimg{
+    padding: 1.5em;
+}
+.reachus .contactimg img{
+    width: 100%;
+    border-radius: 1em !important;
+    
+}
+.copyright{
+    padding: 1em;
+    border-top: 2px solid #ccc;
+    background: #3d3d3d;
+    text-align: center;
+    color: white;
+    font-family: var(--Oswald);
+    font-size: 1em;
+}
+@media only screen and (max-width:600px){
+    .brand-logo{
+      display: none !important;
+    }
+    .infoBlock{
+        display: grid;
+        grid-template-columns: 1fr ;
+        margin: 1em !important;
+        width: 100%;
+        margin: 0 !important;
+    }
+    .infoBlock .introBlock{
+        width: 90%;
+        position: relative;
+        margin: 1em 2em 1em 1em;
+        padding: 3em;
+        height: 100%;
+       
+    }
+    .whatsapp{
+        position: absolute;
+        top: 40em;
+        left: 10em;
+        font-size: 0.8rem;
+        
+    }
+    .infoBlock .formBlock{
+        margin: 3em 2em 1em 1em;
+        padding-left: 4em;
+        width: 90%;
+        height: 90%;
+       
+    }
+    .apply{
+        margin-left: 0.5em;
+    }
+    .btn{
+        margin-left: 4em;
+     }
+     .cardsBlock{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+        margin: 0em 0em;
+    }
+    .cardsBlock {
+        width: 100%;
+        height: 100%;
+       
+    }
+    .aboutus{
+        display: grid;
+        grid-template-columns: 1fr;
+       
+    }
+    .emiCalculator{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .level-right{
+        margin-right:0em;
+        
+    }
+    .control .is-primary{
+        margin-left: 3em;
+    }
+    .footerBlock{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .footerBlock .formBlock{
+        margin: 3em 0em 1em 1em;
+        padding: 1em 0em 0em 3em;
+        width: 90%;
+        height: 90%;
+    }
+}
